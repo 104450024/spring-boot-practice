@@ -1,0 +1,8 @@
+                  # 開發環境 生產環境
+
+
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML
