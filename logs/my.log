@@ -1,21 +1,145 @@
-2021-04-07 00:01:22.371  INFO 8676 --- [main] com.example.final1.demo.DemoApplication  : Starting DemoApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 8676 (C:\Users\charlie\IdeaProjects\Final\target\classes started by charlie in C:\Users\charlie\IdeaProjects\Final)
-2021-04-07 00:01:22.376  INFO 8676 --- [main] com.example.final1.demo.DemoApplication  : The following profiles are active: dev
-2021-04-07 00:01:22.722  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-07 00:01:22.748  INFO 8676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-2021-04-07 00:01:23.010  INFO 8676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-07 00:01:23.015  INFO 8676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-07 00:01:23.015  INFO 8676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-07 00:01:23.084  INFO 8676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2021-04-07 00:01:23.084  INFO 8676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 679 ms
-2021-04-07 00:01:23.172  INFO 8676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-07 00:01:23.196  INFO 8676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-04-07 00:01:23.257  INFO 8676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-07 00:01:23.305  INFO 8676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-07 00:01:23.471  INFO 8676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-07 00:01:23.482  INFO 8676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-07 00:01:23.760  INFO 8676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-07 00:01:23.765  INFO 8676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-07 00:01:24.006  WARN 8676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-07 00:01:24.057  INFO 8676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-07 00:01:24.173  INFO 8676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
-2021-04-07 00:01:24.180  INFO 8676 --- [main] com.example.final1.demo.DemoApplication  : Started DemoApplication in 2.069 seconds (JVM running for 2.499)
+2023-12-26 22:37:37.367  INFO 8304 --- [main] com.example.final1.demo.ShopExpireTest   : Starting ShopExpireTest using Java 1.8.0_392 on DESKTOP-E9UPI94 with PID 8304 (started by charlie in C:\Users\charlie\Desktop\ç·šä¸Šåœ–æ›¸é¤¨\javacrud\spring-boot-practice)
+2023-12-26 22:37:37.368  INFO 8304 --- [main] com.example.final1.demo.ShopExpireTest   : The following profiles are active: dev
+2023-12-26 22:37:37.950  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:37:37.952  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-26 22:37:38.092  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 3 JPA repository interfaces.
+2023-12-26 22:37:38.105  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:37:38.106  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-26 22:37:38.118  INFO 8304 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:37:38.119  INFO 8304 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.KillVoucherRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:37:38.119  INFO 8304 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.VoucherOrderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:37:38.119  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-12-26 22:37:38.685  INFO 8304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-26 22:37:38.735  INFO 8304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2023-12-26 22:37:38.856  INFO 8304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-26 22:37:39.203  INFO 8304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-26 22:37:39.465  INFO 8304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-26 22:37:39.499  INFO 8304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-26 22:37:40.063  INFO 8304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-26 22:37:40.071  INFO 8304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:37:41.187  WARN 8304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-26 22:37:41.631  INFO 8304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:37:42.328  INFO 8304 --- [main] com.example.final1.demo.ShopExpireTest   : Started ShopExpireTest in 5.243 seconds (JVM running for 6.195)
+2023-12-26 22:37:43.455  INFO 8304 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:37:43.581  INFO 8304 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:37:43.583  INFO 8304 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-26 22:37:43.586  INFO 8304 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-26 22:39:51.103  INFO 12548 --- [main] com.example.final1.demo.ShopExpireTest   : Starting ShopExpireTest using Java 1.8.0_392 on DESKTOP-E9UPI94 with PID 12548 (started by charlie in C:\Users\charlie\Desktop\ç·šä¸Šåœ–æ›¸é¤¨\javacrud\spring-boot-practice)
+2023-12-26 22:39:51.104  INFO 12548 --- [main] com.example.final1.demo.ShopExpireTest   : The following profiles are active: dev
+2023-12-26 22:39:51.682  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:39:51.684  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-26 22:39:51.819  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+2023-12-26 22:39:51.832  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:39:51.833  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-26 22:39:51.845  INFO 12548 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:39:51.846  INFO 12548 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.KillVoucherRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:39:51.847  INFO 12548 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.VoucherOrderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:39:51.847  INFO 12548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-12-26 22:39:52.441  INFO 12548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-26 22:39:52.492  INFO 12548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2023-12-26 22:39:52.612  INFO 12548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-26 22:39:52.966  INFO 12548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-26 22:39:53.238  INFO 12548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-26 22:39:53.273  INFO 12548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-26 22:39:53.845  INFO 12548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-26 22:39:53.853  INFO 12548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:39:54.975  WARN 12548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-26 22:39:55.385  INFO 12548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:39:56.155  INFO 12548 --- [main] com.example.final1.demo.ShopExpireTest   : Started ShopExpireTest in 5.344 seconds (JVM running for 6.134)
+2023-12-26 22:39:57.266  INFO 12548 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:39:57.394  INFO 12548 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:39:57.396  INFO 12548 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-26 22:39:57.400  INFO 12548 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-26 22:40:05.638  INFO 2904 --- [main] com.example.final1.demo.DemoApplication  : Starting DemoApplication using Java 1.8.0_392 on DESKTOP-E9UPI94 with PID 2904 (C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice\target\classes started by charlie in C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice)
+2023-12-26 22:40:05.641  INFO 2904 --- [main] com.example.final1.demo.DemoApplication  : The following profiles are active: dev
+2023-12-26 22:40:06.206  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:40:06.208  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-26 22:40:06.345  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+2023-12-26 22:40:06.360  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:40:06.362  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-26 22:40:06.375  INFO 2904 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:40:06.377  INFO 2904 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.KillVoucherRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:40:06.378  INFO 2904 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.VoucherOrderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:40:06.379  INFO 2904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-12-26 22:40:07.190  INFO 2904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-26 22:40:07.199  INFO 2904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-26 22:40:07.200  INFO 2904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-12-26 22:40:07.239  INFO 2904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-12-26 22:40:07.239  INFO 2904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1563 ms
+2023-12-26 22:40:07.472  INFO 2904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-26 22:40:07.514  INFO 2904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2023-12-26 22:40:07.618  INFO 2904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-26 22:40:07.697  INFO 2904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-26 22:40:07.953  INFO 2904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-26 22:40:07.980  INFO 2904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-26 22:40:08.440  INFO 2904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-26 22:40:08.448  INFO 2904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:40:09.240  WARN 2904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-26 22:40:09.528  INFO 2904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:40:10.002  INFO 2904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-12-26 22:40:10.009  INFO 2904 --- [main] com.example.final1.demo.DemoApplication  : Started DemoApplication in 4.745 seconds (JVM running for 5.04)
+2023-12-26 22:40:18.375  INFO 2904 --- [http-nio-8080-exec-15] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-26 22:40:18.376  INFO 2904 --- [http-nio-8080-exec-15] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-26 22:40:18.378  INFO 2904 --- [http-nio-8080-exec-15] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-26 22:46:31.708  INFO 38556 --- [main] com.example.final1.demo.DemoApplication  : Starting DemoApplication using Java 1.8.0_392 on DESKTOP-E9UPI94 with PID 38556 (C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice\target\classes started by charlie in C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice)
+2023-12-26 22:46:31.711  INFO 38556 --- [main] com.example.final1.demo.DemoApplication  : The following profiles are active: dev
+2023-12-26 22:46:32.353  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:46:32.355  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-26 22:46:32.502  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 3 JPA repository interfaces.
+2023-12-26 22:46:32.515  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:46:32.517  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-26 22:46:32.530  INFO 38556 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:46:32.532  INFO 38556 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.KillVoucherRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:46:32.533  INFO 38556 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.VoucherOrderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:46:32.534  INFO 38556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-12-26 22:46:33.328  INFO 38556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-26 22:46:33.338  INFO 38556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-26 22:46:33.339  INFO 38556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-12-26 22:46:33.382  INFO 38556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-12-26 22:46:33.382  INFO 38556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1634 ms
+2023-12-26 22:46:33.619  INFO 38556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-26 22:46:33.668  INFO 38556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2023-12-26 22:46:33.785  INFO 38556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-26 22:46:33.873  INFO 38556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-26 22:46:34.128  INFO 38556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-26 22:46:34.154  INFO 38556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-26 22:46:34.630  INFO 38556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-26 22:46:34.638  INFO 38556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:46:35.443  WARN 38556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-26 22:46:35.733  INFO 38556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:46:36.184  INFO 38556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-12-26 22:46:36.191  INFO 38556 --- [main] com.example.final1.demo.DemoApplication  : Started DemoApplication in 4.884 seconds (JVM running for 5.187)
+2023-12-26 22:46:44.269  INFO 38556 --- [http-nio-8080-exec-104] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-26 22:46:44.317  INFO 38556 --- [http-nio-8080-exec-104] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-26 22:46:44.320  INFO 38556 --- [http-nio-8080-exec-104] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-26 22:53:44.845  INFO 35352 --- [main] com.example.final1.demo.DemoApplication  : Starting DemoApplication using Java 1.8.0_392 on DESKTOP-E9UPI94 with PID 35352 (C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice\target\classes started by charlie in C:\Users\charlie\Desktop\½u¤W¹Ï®ÑÀ]\javacrud\spring-boot-practice)
+2023-12-26 22:53:44.848  INFO 35352 --- [main] com.example.final1.demo.DemoApplication  : The following profiles are active: dev
+2023-12-26 22:53:45.405  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:53:45.407  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-26 22:53:45.543  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 3 JPA repository interfaces.
+2023-12-26 22:53:45.560  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-26 22:53:45.561  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-26 22:53:45.574  INFO 35352 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:53:45.576  INFO 35352 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.KillVoucherRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:53:45.577  INFO 35352 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.final1.demo.domain.VoucherOrderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-12-26 22:53:45.578  INFO 35352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-12-26 22:53:46.365  INFO 35352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-26 22:53:46.374  INFO 35352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-26 22:53:46.374  INFO 35352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-12-26 22:53:46.412  INFO 35352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-12-26 22:53:46.413  INFO 35352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1530 ms
+2023-12-26 22:53:46.655  INFO 35352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-26 22:53:46.699  INFO 35352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2023-12-26 22:53:46.801  INFO 35352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-26 22:53:46.882  INFO 35352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-26 22:53:47.137  INFO 35352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-26 22:53:47.163  INFO 35352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-26 22:53:47.642  INFO 35352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-26 22:53:47.650  INFO 35352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-26 22:53:48.492  WARN 35352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-26 22:53:48.850  INFO 35352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-26 22:53:49.353  INFO 35352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-12-26 22:53:49.361  INFO 35352 --- [main] com.example.final1.demo.DemoApplication  : Started DemoApplication in 4.939 seconds (JVM running for 5.246)
+2023-12-26 22:54:00.320  INFO 35352 --- [http-nio-8080-exec-36] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-26 22:54:00.320  INFO 35352 --- [http-nio-8080-exec-36] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-26 22:54:00.322  INFO 35352 --- [http-nio-8080-exec-36] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

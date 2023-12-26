@@ -12,12 +12,17 @@ logging:
     # 開發環境
 spring:
   datasource:
+    hikari:
+      minimumIdle: 2
+      maximumPoolSize: 10
+      idleTimeout: 120000
+      connectionTimeout: 300000
+      leakDetectionThreshold: 300000
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/charlie
+    url: jdbc:mysql://localhost:3306/charlie?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: qweasdzxc123+*
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-
